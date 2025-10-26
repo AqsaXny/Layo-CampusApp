@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:kuchi_notes/Home/herosection.dart';
+import 'package:kuchi_notes/Components/input_column.dart';
 import 'package:kuchi_notes/Home/navigation.dart';
+import 'package:kuchi_notes/Home/searchsection.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -15,6 +17,7 @@ class Homepage extends StatelessWidget {
             description: 'Aplikasi Catatan Pribadi By FelienZ',
           ),
         ),
+        Searchsection(),
         Navigationsection(),
       ],
     );

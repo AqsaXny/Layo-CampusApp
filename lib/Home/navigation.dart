@@ -8,19 +8,18 @@ class Navigationsection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 350,
-      padding: EdgeInsets.all(20),
+      height: 300,
+      padding: EdgeInsets.symmetric(horizontal: 10),
       child: GridView.count(
         crossAxisCount: 2,
         shrinkWrap: true,
+        crossAxisSpacing: 5,
         children: [
           CardLogo(
             iconItem: Icons.note_add_rounded,
             descript: 'Tambah Catatan',
           ),
-          CardLogo(iconItem: Icons.image, descript: 'Koleksi Waifu'),
-          CardLogo(iconItem: Icons.headphones, descript: 'Playlist Musik'),
-          CardLogo(iconItem: Icons.phone, descript: 'Kontak'),
+          CardLogo(iconItem: Icons.info_outline, descript: 'Bantuan'),
         ],
       ),
     );
