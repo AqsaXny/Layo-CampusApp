@@ -1,0 +1,20 @@
+import 'package:flutter/material.dart';
+import 'package:kuchi_notes/Home/herosection.dart';
+
+class Homepage extends StatelessWidget {
+  const Homepage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        SafeArea(
+          child: Herosection(
+            title: 'Kuchi Notes',
+            description: 'Aplikasi Catatan Pribadi By FelienZ',
+          ),
+        ),
+      ],
+    );
+  }
+}
