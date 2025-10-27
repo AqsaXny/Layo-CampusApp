@@ -7,8 +7,8 @@ class Navigationsection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: double.infinity,
-      height: 300,
+      // width: double.infinity,
+      // height: 250,
       padding: EdgeInsets.symmetric(horizontal: 10),
       child: GridView.count(
         crossAxisCount: 2,
@@ -18,8 +18,17 @@ class Navigationsection extends StatelessWidget {
           CardLogo(
             iconItem: Icons.note_add_rounded,
             descript: 'Tambah Catatan',
+            targetLocation: () {
+              Navigator.pushNamed(context, '/notepage');
+            },
           ),
-          CardLogo(iconItem: Icons.info_outline, descript: 'Bantuan'),
+          CardLogo(
+            iconItem: Icons.info_outline,
+            descript: 'Bantuan',
+            targetLocation: () {
+              Navigator.pushNamed(context, '/helppage');
+            },
+          ),
         ],
       ),
     );

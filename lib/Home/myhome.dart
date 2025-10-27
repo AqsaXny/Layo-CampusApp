@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:kuchi_notes/Home/herosection.dart';
-import 'package:kuchi_notes/Components/input_column.dart';
 import 'package:kuchi_notes/Home/navigation.dart';
 import 'package:kuchi_notes/Home/searchsection.dart';
 
@@ -9,17 +8,19 @@ class Homepage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        SafeArea(
-          child: Herosection(
-            title: 'Kuchi Notes',
-            description: 'Aplikasi Catatan Pribadi By FelienZ',
+    return Scaffold(
+      body: Column(
+        children: [
+          SafeArea(
+            child: Herosection(
+              title: 'Kuchi Notes',
+              description: 'Aplikasi Catatan Pribadi By FelienZ',
+            ),
           ),
-        ),
-        Searchsection(),
-        Navigationsection(),
-      ],
+          Searchsection(),
+          Navigationsection(),
+        ],
+      ),
     );
   }
 }
