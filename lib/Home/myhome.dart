@@ -9,17 +9,19 @@ class Homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          SafeArea(
-            child: Herosection(
-              title: 'Kuchi Notes',
-              description: 'Aplikasi Catatan Pribadi By FelienZ',
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            SafeArea(
+              child: Herosection(
+                title: 'Kuchi Notes',
+                description: 'Aplikasi Catatan Pribadi By FelienZ',
+              ),
             ),
-          ),
-          Searchsection(),
-          Navigationsection(),
-        ],
+            Searchsection(),
+            Navigationsection(),
+          ],
+        ),
       ),
     );
   }

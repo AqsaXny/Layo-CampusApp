@@ -15,7 +15,7 @@ class Herosection extends StatelessWidget {
       children: [
         Container(
           width: double.infinity,
-          height: 350,
+          height: 400,
           decoration: BoxDecoration(
             image: DecorationImage(
               image: AssetImage('assets/image/notes.jpg'),
@@ -27,7 +27,7 @@ class Herosection extends StatelessWidget {
           child: Container(
             padding: EdgeInsets.all(16),
             width: double.infinity,
-            height: 340,
+            height: 380,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -36,14 +36,14 @@ class Herosection extends StatelessWidget {
                 Text(
                   title,
                   style: TextStyle(
-                    fontSize: 20,
+                    fontSize: 22,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
                 ),
                 Text(
                   description,
-                  style: TextStyle(fontSize: 14, color: Colors.white),
+                  style: TextStyle(fontSize: 16, color: Colors.white),
                 ),
               ],
             ),

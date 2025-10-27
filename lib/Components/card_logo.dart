@@ -12,7 +12,7 @@ class CardLogo extends StatelessWidget {
   final VoidCallback targetLocation;
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
+    return InkWell(
       onTap: targetLocation,
       child: Card(
         shadowColor: Colors.black,

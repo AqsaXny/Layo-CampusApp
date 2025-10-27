@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:kuchi_notes/Help/Helppage.dart';
 import 'package:kuchi_notes/Home/myhome.dart';
 import 'package:kuchi_notes/Notes/notepage.dart';
+import 'package:kuchi_notes/Pinned/pinnedpage.dart';
 
 void main() => runApp(const MainApp());
 
@@ -17,6 +18,7 @@ class MainApp extends StatelessWidget {
         '/': (context) => Homepage(),
         '/notepage': (context) => Notepage(),
         '/helppage': (context) => Helppage(),
+        '/pinnedpage': (context) => Pinnedpage(),
       },
     );
   }

@@ -1,3 +1,4 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:kuchi_notes/Components/card_logo.dart';
 
@@ -10,26 +11,46 @@ class Navigationsection extends StatelessWidget {
       // width: double.infinity,
       // height: 250,
       padding: EdgeInsets.symmetric(horizontal: 10),
-      child: GridView.count(
-        crossAxisCount: 2,
-        shrinkWrap: true,
-        crossAxisSpacing: 5,
-        children: [
-          CardLogo(
-            iconItem: Icons.note_add_rounded,
-            descript: 'Tambah Catatan',
-            targetLocation: () {
-              Navigator.pushNamed(context, '/notepage');
-            },
+      child: CarouselSlider(
+        items: [
+          SizedBox(
+            width: MediaQuery.of(context).size.width * 0.35,
+            child: CardLogo(
+              iconItem: Icons.note_add_rounded,
+              descript: 'Tambah Catatan',
+              targetLocation: () {
+                Navigator.pushNamed(context, '/notepage');
+              },
+            ),
           ),
-          CardLogo(
-            iconItem: Icons.info_outline,
-            descript: 'Bantuan',
-            targetLocation: () {
-              Navigator.pushNamed(context, '/helppage');
-            },
+          SizedBox(
+            width: MediaQuery.of(context).size.width * 0.35,
+            child: CardLogo(
+              iconItem: Icons.star_half,
+              descript: 'Starred Notes',
+              targetLocation: () {
+                Navigator.pushNamed(context, '/pinnedpage');
+              },
+            ),
+          ),
+          SizedBox(
+            width: MediaQuery.of(context).size.width * 0.35,
+            child: CardLogo(
+              iconItem: Icons.info_outline,
+              descript: 'Bantuan',
+              targetLocation: () {
+                Navigator.pushNamed(context, '/helppage');
+              },
+            ),
           ),
         ],
+        options: CarouselOptions(
+          height: MediaQuery.of(context).size.height * 0.25,
+          padEnds: false,
+          viewportFraction: 0.38,
+          enableInfiniteScroll: false,
+          enlargeCenterPage: false,
+        ),
       ),
     );
   }
