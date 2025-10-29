@@ -14,17 +14,17 @@ class Navigationsection extends StatelessWidget {
       child: CarouselSlider(
         items: [
           SizedBox(
-            width: MediaQuery.of(context).size.width * 0.35,
+            width: MediaQuery.of(context).size.width * 0.5,
             child: CardLogo(
               iconItem: Icons.note_add_rounded,
-              descript: 'Tambah Catatan',
+              descript: 'Catatan Anda',
               targetLocation: () {
                 Navigator.pushNamed(context, '/notepage');
               },
             ),
           ),
           SizedBox(
-            width: MediaQuery.of(context).size.width * 0.35,
+            width: MediaQuery.of(context).size.width * 0.5,
             child: CardLogo(
               iconItem: Icons.star_half,
               descript: 'Starred Notes',
@@ -34,7 +34,7 @@ class Navigationsection extends StatelessWidget {
             ),
           ),
           SizedBox(
-            width: MediaQuery.of(context).size.width * 0.35,
+            width: MediaQuery.of(context).size.width * 0.5,
             child: CardLogo(
               iconItem: Icons.info_outline,
               descript: 'Bantuan',
@@ -47,7 +47,7 @@ class Navigationsection extends StatelessWidget {
         options: CarouselOptions(
           height: MediaQuery.of(context).size.height * 0.25,
           padEnds: false,
-          viewportFraction: 0.38,
+          viewportFraction: 0.5,
           enableInfiniteScroll: false,
           enlargeCenterPage: false,
         ),

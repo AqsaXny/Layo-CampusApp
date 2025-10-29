@@ -5,6 +5,20 @@ class Pinnedpage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Column(children: []));
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.blue[900],
+        // leading: Padding(padding: EdgeInsets.all(8)),
+        title: Text(
+          'Pinned Notes',
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
+      body: Column(children: []),
+    );
   }
 }

@@ -9,6 +9,18 @@ class Homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        // leading: Padding(padding: EdgeInsets.all(2)),
+        backgroundColor: Colors.blue[900],
+        title: Text(
+          'Home Page',
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: [

@@ -15,6 +15,7 @@ class CardLogo extends StatelessWidget {
     return InkWell(
       onTap: targetLocation,
       child: Card(
+        color: Colors.grey[100],
         shadowColor: Colors.black,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
