@@ -26,8 +26,8 @@ class Navigationsection extends StatelessWidget {
           SizedBox(
             width: MediaQuery.of(context).size.width * 0.5,
             child: CardLogo(
-              iconItem: Icons.star_half,
-              descript: 'Starred Notes',
+              iconItem: Icons.push_pin,
+              descript: 'Pinned Notes',
               targetLocation: () {
                 Navigator.pushNamed(context, '/pinnedpage');
               },
@@ -47,7 +47,7 @@ class Navigationsection extends StatelessWidget {
         options: CarouselOptions(
           height: MediaQuery.of(context).size.height * 0.25,
           padEnds: false,
-          viewportFraction: 0.5,
+          viewportFraction: 0.55,
           enableInfiniteScroll: false,
           enlargeCenterPage: false,
         ),

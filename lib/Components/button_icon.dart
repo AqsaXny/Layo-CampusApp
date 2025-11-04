@@ -12,7 +12,7 @@ class BtnIcon extends StatelessWidget {
           color: Colors.grey,
           borderRadius: BorderRadius.circular(8),
         ),
-        child: const Icon(Icons.search),
+        child: const Icon(Icons.search, color: Colors.white),
       ),
     );
   }

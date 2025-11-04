@@ -1,19 +1,5 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 
-/*  Text(
-                  noteTitle,
-                  style: TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.w300,
-                    color: Colors.white,
-                  ),
-                ), */
-/* Text(
-                        description,
-                        style: TextStyle(fontSize: 12, color: Colors.white),
-                      ), */
 class Noteitems extends StatelessWidget {
   const Noteitems({
     super.key,
