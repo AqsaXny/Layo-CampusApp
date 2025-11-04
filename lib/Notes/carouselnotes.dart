@@ -2,18 +2,22 @@ import 'package:flutter/material.dart';
 import 'package:kuchi_notes/Components/note_item.dart';
 
 class Carouselnotes extends StatelessWidget {
-  const Carouselnotes({super.key});
+  final List<Map<String, String>> notes;
+  const Carouselnotes({super.key, required this.notes});
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       width: double.infinity,
       child: Column(
-        children: [
-          Noteitems(noteTitle: 'My Kisah', description: 'Ini Adalah My Kisah'),
-          Noteitems(noteTitle: 'Kuchi Kisah', description: 'Kuchi Kisah'),
-          Noteitems(noteTitle: 'JavaScript', description: 'King of Ecosystem'),
-        ],
+        children: notes
+            .map(
+              (note) => Noteitems(
+                noteTitle: note['title'] ?? '',
+                description: note['content'] ?? '',
+              ),
+            )
+            .toList(),
       ),
     );
   }
