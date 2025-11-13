@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
 
-class Pinnedpage extends StatelessWidget {
-  const Pinnedpage({super.key});
+class Aboutpage extends StatelessWidget {
+  const Aboutpage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue[900],
-        // leading: Padding(padding: EdgeInsets.all(8)),
+        backgroundColor: Colors.black,
         title: Text(
-          'Pinned Notes',
+          'Layo Campus',
           style: TextStyle(
             color: Colors.white,
             fontSize: 20,
@@ -18,7 +17,7 @@ class Pinnedpage extends StatelessWidget {
           ),
         ),
       ),
-      body: Column(children: []),
+      body: Center(child: Text('Ini Halaman About')),
     );
   }
 }

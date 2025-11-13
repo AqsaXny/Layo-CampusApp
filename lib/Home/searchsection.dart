@@ -11,7 +11,7 @@ class Searchsection extends StatelessWidget {
       child: Row(
         spacing: 4,
         children: [
-          Expanded(child: Inputcolumn(inputText: 'Masukkan Keyword Catatan')),
+          Expanded(child: Inputcolumn(inputText: 'Cari Dosen...')),
           BtnIcon(),
         ],
       ),

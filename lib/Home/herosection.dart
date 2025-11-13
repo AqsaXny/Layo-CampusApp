@@ -18,7 +18,7 @@ class Herosection extends StatelessWidget {
           height: 400,
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('assets/image/notes.jpg'),
+              image: AssetImage('assets/image/univ.png'),
               fit: BoxFit.cover,
             ),
           ),
@@ -38,12 +38,16 @@ class Herosection extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 22,
                     fontWeight: FontWeight.bold,
-                    color: Colors.white,
+                    color: Colors.black,
                   ),
                 ),
                 Text(
                   description,
-                  style: TextStyle(fontSize: 16, color: Colors.white),
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ],
             ),

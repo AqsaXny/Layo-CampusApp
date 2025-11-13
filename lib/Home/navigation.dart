@@ -16,30 +16,20 @@ class Navigationsection extends StatelessWidget {
           SizedBox(
             width: MediaQuery.of(context).size.width * 0.5,
             child: CardLogo(
-              iconItem: Icons.note_add_rounded,
-              descript: 'Catatan Anda',
+              iconItem: Icons.location_on_outlined,
+              descript: 'Lokasi Dosen',
               targetLocation: () {
-                Navigator.pushNamed(context, '/notepage');
+                Navigator.pushNamed(context, '/location');
               },
             ),
           ),
-          /* SizedBox(
-            width: MediaQuery.of(context).size.width * 0.5,
-            child: CardLogo(
-              iconItem: Icons.push_pin,
-              descript: 'Pinned Notes',
-              targetLocation: () {
-                Navigator.pushNamed(context, '/pinnedpage');
-              },
-            ),
-          ), */
           SizedBox(
             width: MediaQuery.of(context).size.width * 0.5,
             child: CardLogo(
               iconItem: Icons.info_outline,
-              descript: 'Bantuan',
+              descript: 'About',
               targetLocation: () {
-                Navigator.pushNamed(context, '/helppage');
+                Navigator.pushNamed(context, '/about');
               },
             ),
           ),

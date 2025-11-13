@@ -10,10 +10,20 @@ class Homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        // leading: Padding(padding: EdgeInsets.all(2)),
-        backgroundColor: Colors.blue[900],
+        leading: Container(
+          decoration: BoxDecoration(
+            color: Colors.black,
+            image: DecorationImage(
+              image: AssetImage('assets/image/Kuchistore.png'),
+              fit: BoxFit.cover,
+            ),
+            border: Border.all(width: 8),
+            borderRadius: BorderRadius.circular(12),
+          ),
+        ),
+        backgroundColor: Colors.black,
         title: Text(
-          'Home Page',
+          'Layo Campus',
           style: TextStyle(
             color: Colors.white,
             fontSize: 20,
@@ -26,8 +36,8 @@ class Homepage extends StatelessWidget {
           children: [
             SafeArea(
               child: Herosection(
-                title: 'Kuchi Notes',
-                description: 'Aplikasi Catatan Pribadi By FelienZ',
+                title: 'Layo Campus',
+                description: 'Aplikasi Pelacak Lokasi Dosen',
               ),
             ),
             Searchsection(),
