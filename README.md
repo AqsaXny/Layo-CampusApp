@@ -1,4 +1,4 @@
-# Notes_App
+# Layo-Campus App
 
 A new Flutter project.
 
