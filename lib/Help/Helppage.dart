@@ -18,7 +18,7 @@ class Helppage extends StatelessWidget {
           ),
         ),
       ),
-      body: Column(children: []),
+      body: Center(child: Text('Ini Halaman Bantuan')),
     );
   }
 }

@@ -23,7 +23,7 @@ class Navigationsection extends StatelessWidget {
               },
             ),
           ),
-          SizedBox(
+          /* SizedBox(
             width: MediaQuery.of(context).size.width * 0.5,
             child: CardLogo(
               iconItem: Icons.push_pin,
@@ -32,7 +32,7 @@ class Navigationsection extends StatelessWidget {
                 Navigator.pushNamed(context, '/pinnedpage');
               },
             ),
-          ),
+          ), */
           SizedBox(
             width: MediaQuery.of(context).size.width * 0.5,
             child: CardLogo(
