@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:kuchi_notes/About/aboutpage.dart';
-import 'package:kuchi_notes/Help/Helppage.dart';
 import 'package:kuchi_notes/Home/myhome.dart';
 import 'package:kuchi_notes/Location/locationpage.dart';
 
