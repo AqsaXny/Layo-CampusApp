@@ -16,7 +16,7 @@ class MainApp extends StatelessWidget {
       routes: {
         '/': (context) => Homepage(),
         '/location': (context) => Locationpage(),
-        '/about': (context) => Aboutpage(),
+        '/about': (context) => AboutPage(),
       },
     );
   }
